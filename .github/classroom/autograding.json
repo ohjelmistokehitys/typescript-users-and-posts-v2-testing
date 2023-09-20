@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "filterOutDeletedPosts",
+      "setup": "npm install",
+      "run": "npm test src/tests/filtering.test.ts",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "mapPostsToUsers",
+      "setup": "npm install",
+      "run": "npm test src/tests/mapping.test.ts",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "sortPostsByPublishedDate",
+      "setup": "npm install",
+      "run": "npm test src/tests/sorting-posts.test.ts",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 4
+    },
+    {
+      "name": "sortUsersByRegistrationDate",
+      "setup": "npm install",
+      "run": "npm test src/tests/sorting-users.test.ts",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 3
+    }
+  ]
+}
