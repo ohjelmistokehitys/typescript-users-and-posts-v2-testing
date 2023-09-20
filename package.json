@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "ts-node src/usersAndPosts.ts",
+    "test": "jest --verbose"
+  },
+  "devDependencies": {
+    "@jest/globals": "29",
+    "@types/node": "20",
+    "jest": "29",
+    "ts-jest": "29",
+    "ts-node": "10",
+    "typescript": "5"
+  }
+}
