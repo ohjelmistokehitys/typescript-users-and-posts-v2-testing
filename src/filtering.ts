@@ -11,5 +11,5 @@ export function filterOutDeletedPosts(posts: Post[]): Post[] {
     // TODO: Implement filtering logic to exclude deleted posts
     // Return the filtered array
 
-    return posts.filter(post => true); // FIXME
+    return posts.filter(post => !post.deletedAt);
 }
