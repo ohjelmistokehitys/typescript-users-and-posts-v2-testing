@@ -8,5 +8,5 @@ import { Post } from "./types";
  * @returns A copy of the given array of posts without deleted posts.
  */
 export function filterOutDeletedPosts(posts: Post[]): Post[] {
-    return posts.filter(post => !post.deletedAt);
+    return posts.filter(p => !p.deletedAt);
 }

@@ -7,11 +7,10 @@ import { Post, User, UserWithPosts } from "./types";
  * @returns The array of UserWithPosts objects.
  */
 export function mapPostsToUsers(users: User[], posts: Post[]): UserWithPosts[] {
-    // TODO: Create UserWithPosts objects by associating posts with users.
     return users.map(user => {
         return {
             ...user,
-            posts: posts.slice(0, 20) // FIXME! Only add the posts for current user
-        }
+            posts: posts.filter(post => post.userId === user.id)
+        };
     });
 }
